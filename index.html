@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,6 @@
       background-color: #1e293b;
       color: white;
     }
-
 
     .hero {
       background: url('https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
@@ -69,20 +69,21 @@
       gap: 30px;
       margin-bottom: 40px;
     }
-    .card {
-  flex: 1 1 calc(45% - 30px);
-  max-width: 280px;
-   border: 1px solid #334155; 
-  border-radius: 16px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-}
 
+    .card {
+      flex: 1 1 280px;
+      max-width: 300px;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      background-color: #1e293b;
+    }
 
     .row.three .card {
-      flex: 1 1 calc(30% - 30px);
+      flex: 1 1 280px;
     }
 
     .card:hover {
@@ -132,9 +133,39 @@
       color: #38bdf8;
     }
 
+    /* 📱 Responsive Design */
+    @media (max-width: 992px) {
+      .card {
+        flex: 1 1 calc(45% - 20px);
+      }
+    }
+
     @media (max-width: 768px) {
       .card {
         flex: 1 1 100%;
+        max-width: 100%;
+      }
+
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+
+      .hero p {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero {
+        padding: 60px 10px 30px;
+      }
+
+      .team-section {
+        padding: 40px 10px;
+      }
+
+      .card {
+        padding: 15px;
       }
     }
   </style>
@@ -174,7 +205,7 @@
 
     <div class="row three">
       <div class="card">
-        <img src="https://randomuser.me/api/portraits/men/40.jpg" alt="Erik Longman" />
+        <img src="https://randomuser.me/api/portraits/men/40.jpg" alt="Momi Jamali" />
         <h3>Momi jamali</h3>
         <p class="role">DevOps Engineer</p>
         <p class="bio">Specialist in automation, CI/CD, and cloud infrastructure.</p>
@@ -183,7 +214,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Matthew Foster" />
+        <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Sohaib" />
         <h3>Sohaib</h3>
         <p class="role">Backend Developer</p>
         <p class="bio">Architecting APIs and ensuring reliable data flow in applications.</p>
@@ -192,10 +223,13 @@
         </div>
       </div>
       <div class="card">
-        <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="Artur Dichter" />
+        <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="Sijil" />
         <h3>Sijil</h3>
         <p class="role">Database Administrator</p>
         <p class="bio">Managing and securing databases to ensure performance and uptime.</p>
+        <div class="socials">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
       </div>
     </div>
   </div>
