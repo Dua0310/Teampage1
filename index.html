@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meet Our Team</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #1e293b;
+      color: white;
+    }
+
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      padding: 100px 20px 60px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(30, 41, 59, 0.7);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .hero h2 {
+      font-weight: 300;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      opacity: 0.8;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: #d1d5db;
+    }
+
+    .team-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    .card {
+  flex: 1 1 calc(45% - 30px);
+  max-width: 280px;
+   border: 1px solid #334155; 
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+
+    .row.three .card {
+      flex: 1 1 calc(30% - 30px);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 30%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #334155;
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    .card p.role {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      margin-top: 5px;
+    }
+
+    .card p.bio {
+      font-size: 0.8rem;
+      margin-top: 10px;
+      color: #94a3b8;
+    }
+
+    .socials {
+      margin-top: 10px;
+    }
+
+    .socials a {
+      color: #cbd5e1;
+      margin: 0 5px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .socials a:hover {
+      color: #38bdf8;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-content">
+      <h2>Our Team</h2>
+      <h1>Meet a team of experts and innovators who are pioneers in their field</h1>
+      <p>We are a group of passionate professionals committed to delivering excellence in every project we take on.</p>
+    </div>
+  </div>
+
+  <div class="team-section">
+    <div class="row">
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dua Jamali" />
+        <h3>Dua Jamali</h3>
+        <p class="role">Frontend Developer</p>
+        <p class="bio">Crafting responsive, accessible user interfaces with modern tools.</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/women/48.jpg" alt="Hina Malik" />
+        <h3>Hina Malik</h3>
+        <p class="role">Project Manager</p>
+        <p class="bio">Leads agile teams, manages timelines, and ensures client satisfaction.</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row three">
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/men/40.jpg" alt="Erik Longman" />
+        <h3>Momi jamali</h3>
+        <p class="role">DevOps Engineer</p>
+        <p class="bio">Specialist in automation, CI/CD, and cloud infrastructure.</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Matthew Foster" />
+        <h3>Sohaib</h3>
+        <p class="role">Backend Developer</p>
+        <p class="bio">Architecting APIs and ensuring reliable data flow in applications.</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="Artur Dichter" />
+        <h3>Sijil</h3>
+        <p class="role">Database Administrator</p>
+        <p class="bio">Managing and securing databases to ensure performance and uptime.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
